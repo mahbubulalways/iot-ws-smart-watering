@@ -74,6 +74,7 @@ const handleMotorMode = async (mode: "AUTO" | "MANUAL") => {
   }
 
   if (mode === "MANUAL") {
+    broadcast("app-motor-state", "OFF");
     LAST_AUTO_STATE = null;
     // Close any active auto session
     if (activeSession && !activeSession.isManual) {
