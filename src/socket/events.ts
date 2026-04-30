@@ -11,8 +11,8 @@ let MANUAL_MOTOR_STATE: "ON" | "OFF" | null = null;
 let LAST_MANUAL_STATE: "ON" | "OFF" | null = null;
 let LAST_AUTO_STATE: boolean | null = null;
 
-const DRY = 30;
-const WET = 60;
+const DRY = 20;
+const WET = 40;
 
 let CURRENT_SENSOR: ESP_32_INFO | null = null;
 

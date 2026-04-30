@@ -9,8 +9,8 @@ let MOTOR_MODE = "MANUAL";
 let MANUAL_MOTOR_STATE = null;
 let LAST_MANUAL_STATE = null;
 let LAST_AUTO_STATE = null;
-const DRY = 30;
-const WET = 60;
+const DRY = 20;
+const WET = 40;
 let CURRENT_SENSOR = null;
 let activeSession = null;
 // Load mode

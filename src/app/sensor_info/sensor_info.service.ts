@@ -18,7 +18,14 @@ const getMotorHistoryFromDB = async () => {
   return result;
 };
 
+// DELETE SENSOR HISTORY
+const deleteSensorHistroy = async () => {
+  const result = await SensorInfoModel.deleteMany();
+  return result;
+};
+
 export const SensorService = {
   storeSensorInformationToDB,
   getMotorHistoryFromDB,
+  deleteSensorHistroy,
 };
