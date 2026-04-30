@@ -14,7 +14,7 @@ const storeSensorInformationToDB = async (payload) => {
     }
 };
 const getMotorHistoryFromDB = async () => {
-    const result = await sensor_info_model_1.SensorInfoModel.find({});
+    const result = await sensor_info_model_1.SensorInfoModel.find({}).sort({ motorOff: 1 });
     return result;
 };
 // DELETE SENSOR HISTORY
